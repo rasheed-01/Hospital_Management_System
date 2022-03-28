@@ -57,8 +57,8 @@ public class RegistrationGUI extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        back = new javax.swing.JButton();
+        submitregisteredpatients = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -66,7 +66,7 @@ public class RegistrationGUI extends javax.swing.JFrame {
         patidgen = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jButton3 = new javax.swing.JButton();
+        clear = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Patient Registeration");
@@ -87,19 +87,19 @@ public class RegistrationGUI extends javax.swing.JFrame {
 
         jTextField3.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
 
-        jButton1.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
-        jButton1.setText("Back");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        back.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
+        back.setText("Back");
+        back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                backActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
-        jButton2.setText("Submit");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        submitregisteredpatients.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
+        submitregisteredpatients.setText("Submit");
+        submitregisteredpatients.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                submitregisteredpatientsActionPerformed(evt);
             }
         });
 
@@ -139,11 +139,11 @@ public class RegistrationGUI extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
         jLabel9.setText("Patient ID Generated:");
 
-        jButton3.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
-        jButton3.setText("Clear");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        clear.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
+        clear.setText("Clear");
+        clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                clearActionPerformed(evt);
             }
         });
 
@@ -163,11 +163,11 @@ public class RegistrationGUI extends javax.swing.JFrame {
                                 .addGap(65, 65, 65)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(55, 55, 55)
-                                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(50, 50, 50)
-                                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(submitregisteredpatients, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -214,9 +214,9 @@ public class RegistrationGUI extends javax.swing.JFrame {
                         .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(25, 25, 25)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(submitregisteredpatients, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -229,12 +229,13 @@ public class RegistrationGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
         new AppointmentMain().setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_backActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void submitregisteredpatientsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitregisteredpatientsActionPerformed
+         // Inserts the given information by the patient into database and allows them to make appointments
         String name = jTextField1.getText ();
         String age = jTextField2.getText();
         String phoneno = jTextField3.getText();
@@ -269,15 +270,15 @@ public class RegistrationGUI extends javax.swing.JFrame {
         {
             e.printStackTrace();
         }  
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_submitregisteredpatientsActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
        jTextField1. setText ("");
        jTextField2.setText ("");
        jTextField3.setText ("");
        jTextField4.setText ("");
        patidgen.setText ("");
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_clearActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -315,9 +316,8 @@ public class RegistrationGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton back;
+    private javax.swing.JButton clear;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -331,5 +331,6 @@ public class RegistrationGUI extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField patidgen;
+    private javax.swing.JButton submitregisteredpatients;
     // End of variables declaration//GEN-END:variables
 }

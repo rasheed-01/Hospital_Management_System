@@ -81,8 +81,8 @@ public class PharmacyLogin extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        pharmacylogin = new javax.swing.JButton();
+        back = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -95,19 +95,19 @@ public class PharmacyLogin extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
         jLabel3.setText("Password :");
 
-        jButton1.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
-        jButton1.setText("Login");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        pharmacylogin.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
+        pharmacylogin.setText("Login");
+        pharmacylogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                pharmacyloginActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
-        jButton2.setText("Back");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        back.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
+        back.setText("Back");
+        back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                backActionPerformed(evt);
             }
         });
 
@@ -143,13 +143,13 @@ public class PharmacyLogin extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(back, javax.swing.GroupLayout.Alignment.LEADING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton1))
+                    .addComponent(pharmacylogin))
                 .addContainerGap(105, Short.MAX_VALUE))
             .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -167,16 +167,16 @@ public class PharmacyLogin extends javax.swing.JFrame {
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(pharmacylogin, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+    private void pharmacyloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pharmacyloginActionPerformed
+        // //Login Functionality For Pharmacist. Validates the Credentials by comparing the values with the database.
         String adusername =jTextField1.getText();
         String adpass =jTextField2.getText();
         String role="Pharmacy";
@@ -219,12 +219,12 @@ public class PharmacyLogin extends javax.swing.JFrame {
             else{JOptionPane.showMessageDialog(this,"Username or Password is incorrect");}
         }
         catch(Exception e){e.printStackTrace();}  
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_pharmacyloginActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
         new MainInterface().setVisible(true);
         this.setVisible(false);         
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_backActionPerformed
 
     /**
      * @param args the command line arguments
@@ -263,13 +263,13 @@ public class PharmacyLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton back;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JButton pharmacylogin;
     // End of variables declaration//GEN-END:variables
 }

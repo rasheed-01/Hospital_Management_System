@@ -48,8 +48,6 @@ public class AdminInterface2 extends javax.swing.JFrame {
     String username4;
     
 
-    /**
-     * Creates new form AdminInterface2*/
         public AdminInterface2() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -167,13 +165,13 @@ public class AdminInterface2 extends javax.swing.JFrame {
         jLabel27 = new javax.swing.JLabel();
         patstatus = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
-        jButton9 = new javax.swing.JButton();
+        update = new javax.swing.JButton();
         apptdate1 = new javax.swing.JTextField();
         jLabel37 = new javax.swing.JLabel();
         docname = new javax.swing.JTextField();
         jLabel38 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
+        clear = new javax.swing.JButton();
+        refresh = new javax.swing.JButton();
         Specific_Transac_Table = new javax.swing.JDialog();
         jScrollPane6 = new javax.swing.JScrollPane();
         Specific_transac = new javax.swing.JTable();
@@ -208,7 +206,7 @@ public class AdminInterface2 extends javax.swing.JFrame {
         testnamepay = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        jButton5 = new javax.swing.JButton();
+        paylab = new javax.swing.JButton();
         Refreshlabpayment = new javax.swing.JButton();
         status = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
@@ -222,13 +220,13 @@ public class AdminInterface2 extends javax.swing.JFrame {
         jScrollPane11 = new javax.swing.JScrollPane();
         patlabsearchid = new javax.swing.JTextArea();
         jLabel21 = new javax.swing.JLabel();
-        Search1 = new javax.swing.JButton();
+        searchlab = new javax.swing.JButton();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         cardno = new javax.swing.JTextField();
         jLabel36 = new javax.swing.JLabel();
         date = new javax.swing.JTextField();
-        jButton16 = new javax.swing.JButton();
+        clearlab = new javax.swing.JButton();
         Registered_patients = new javax.swing.JDialog();
         jPanel4 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -252,16 +250,16 @@ public class AdminInterface2 extends javax.swing.JFrame {
         patregisteredid = new javax.swing.JTextArea();
         jLabel45 = new javax.swing.JLabel();
         search_registeredUsers = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        payment_lab = new javax.swing.JButton();
+        view_appointments = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        view_transactions = new javax.swing.JButton();
+        logoutadmin = new javax.swing.JButton();
+        registered_users = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        bookappointment = new javax.swing.JButton();
+        login_acitvity = new javax.swing.JButton();
 
         UserActivityTable.setMinimumSize(new java.awt.Dimension(895, 400));
         UserActivityTable.setResizable(false);
@@ -430,7 +428,11 @@ public class AdminInterface2 extends javax.swing.JFrame {
         jLabel24.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         jLabel24.setText("Age");
 
+        patinfoname.setEditable(false);
+
         patinfoID.setEditable(false);
+
+        patinfoage.setEditable(false);
 
         jLabel25.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         jLabel25.setText("Contact No.");
@@ -449,11 +451,11 @@ public class AdminInterface2 extends javax.swing.JFrame {
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel28.setText("Patient Information");
 
-        jButton9.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton9.setText("Update");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        update.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        update.setText("Update");
+        update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                updateActionPerformed(evt);
             }
         });
 
@@ -463,19 +465,19 @@ public class AdminInterface2 extends javax.swing.JFrame {
         jLabel38.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         jLabel38.setText("Department");
 
-        jButton3.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton3.setText("Clear");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        clear.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        clear.setText("Clear");
+        clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                clearActionPerformed(evt);
             }
         });
 
-        jButton17.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton17.setText("Refresh");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        refresh.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        refresh.setText("Refresh");
+        refresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                refreshActionPerformed(evt);
             }
         });
 
@@ -524,11 +526,11 @@ public class AdminInterface2 extends javax.swing.JFrame {
                         .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(Specific_Appointment_TableLayout.createSequentialGroup()
-                        .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(refresh, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
-                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(update, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
         );
         Specific_Appointment_TableLayout.setVerticalGroup(
@@ -583,10 +585,10 @@ public class AdminInterface2 extends javax.swing.JFrame {
                     .addComponent(jLabel26))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(Specific_Appointment_TableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton17)
+                    .addComponent(refresh)
                     .addGroup(Specific_Appointment_TableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton9)
-                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(update)
+                        .addComponent(clear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(33, 33, 33))
         );
 
@@ -932,11 +934,11 @@ public class AdminInterface2 extends javax.swing.JFrame {
             }
         });
 
-        jButton5.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton5.setText("Pay");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        paylab.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        paylab.setText("Pay");
+        paylab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                paylabActionPerformed(evt);
             }
         });
 
@@ -986,11 +988,11 @@ public class AdminInterface2 extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         jLabel21.setText("Enter Patient ID :");
 
-        Search1.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
-        Search1.setText("Search");
-        Search1.addActionListener(new java.awt.event.ActionListener() {
+        searchlab.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        searchlab.setText("Search");
+        searchlab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Search1ActionPerformed(evt);
+                searchlabActionPerformed(evt);
             }
         });
 
@@ -1016,11 +1018,11 @@ public class AdminInterface2 extends javax.swing.JFrame {
             }
         });
 
-        jButton16.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton16.setText("Clear");
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        clearlab.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        clearlab.setText("Clear");
+        clearlab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                clearlabActionPerformed(evt);
             }
         });
 
@@ -1037,7 +1039,7 @@ public class AdminInterface2 extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(49, 49, 49)
-                        .addComponent(Search1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(searchlab, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 337, Short.MAX_VALUE))
                     .addComponent(jScrollPane8))
                 .addGroup(LAB_PaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1102,9 +1104,9 @@ public class AdminInterface2 extends javax.swing.JFrame {
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, LAB_PaymentLayout.createSequentialGroup()
                                             .addComponent(Refreshlabpayment)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(clearlab, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGap(28, 28, 28)
-                                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                            .addComponent(paylab, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                         .addContainerGap(24, Short.MAX_VALUE))))
         );
         LAB_PaymentLayout.setVerticalGroup(
@@ -1118,7 +1120,7 @@ public class AdminInterface2 extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, LAB_PaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                                 .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(Search1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(searchlab, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(13, 13, 13)
                         .addComponent(jScrollPane8))
                     .addGroup(LAB_PaymentLayout.createSequentialGroup()
@@ -1166,8 +1168,8 @@ public class AdminInterface2 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(LAB_PaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Refreshlabpayment, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(paylab, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(clearlab, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -1439,46 +1441,46 @@ public class AdminInterface2 extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(561, 357));
         setSize(new java.awt.Dimension(0, 0));
 
-        jButton1.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton1.setText("Payment For Lab Test");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        payment_lab.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        payment_lab.setText("Payment For Lab Test");
+        payment_lab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                payment_labActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton2.setText("Appointments");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        view_appointments.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        view_appointments.setText("Appointments");
+        view_appointments.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                view_appointmentsActionPerformed(evt);
             }
         });
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
         jLabel1.setText("Choose One of the Following Options");
 
-        jButton4.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton4.setText("Transactions");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        view_transactions.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        view_transactions.setText("Transactions");
+        view_transactions.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                view_transactionsActionPerformed(evt);
             }
         });
 
-        jButton6.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton6.setText("Log Out");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        logoutadmin.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        logoutadmin.setText("Log Out");
+        logoutadmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                logoutadminActionPerformed(evt);
             }
         });
 
-        jButton7.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton7.setText("Update Registered Users");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        registered_users.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        registered_users.setText("Update Registered Users");
+        registered_users.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                registered_usersActionPerformed(evt);
             }
         });
 
@@ -1506,19 +1508,19 @@ public class AdminInterface2 extends javax.swing.JFrame {
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
-        jButton8.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton8.setText("Book An Appointment");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        bookappointment.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        bookappointment.setText("Book An Appointment");
+        bookappointment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                bookappointmentActionPerformed(evt);
             }
         });
 
-        jButton10.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
-        jButton10.setText("View Login Activtiy");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        login_acitvity.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
+        login_acitvity.setText("View Login Activtiy");
+        login_acitvity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                login_acitvityActionPerformed(evt);
             }
         });
 
@@ -1535,18 +1537,18 @@ public class AdminInterface2 extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(bookappointment, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(view_appointments, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE)
+                            .addComponent(view_transactions, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(login_acitvity, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(registered_users, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)
+                            .addComponent(payment_lab, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap(45, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(160, 160, 160)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(logoutadmin, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -1557,26 +1559,28 @@ public class AdminInterface2 extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(bookappointment, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(payment_lab, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(registered_users, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(view_appointments, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(login_acitvity, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(view_transactions, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(logoutadmin, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       LAB_Payment.setModal(false);
+    
+    
+    private void payment_labActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payment_labActionPerformed
+       // Initiate Lab Payment Page 
+        LAB_Payment.setModal(false);
        String stats3="UnPaid";
        
        try
@@ -1617,9 +1621,11 @@ public class AdminInterface2 extends javax.swing.JFrame {
        LAB_Payment.setModal(false);
        LAB_Payment.setLocationRelativeTo(null);
        LAB_Payment.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_payment_labActionPerformed
+    
+    
+    private void view_appointmentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_view_appointmentsActionPerformed
+        // View Appointments and Update the info
         Specific_Appointment_Table.setModal(false); 
         
         try
@@ -1660,9 +1666,11 @@ public class AdminInterface2 extends javax.swing.JFrame {
         Specific_Appointment_Table.setModal(false);
         Specific_Appointment_Table.setLocationRelativeTo(null);
         Specific_Appointment_Table.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_view_appointmentsActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    
+    private void view_transactionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_view_transactionsActionPerformed
+        // View Transactions 
         Specific_Transac_Table.setModal(false); 
         
         try
@@ -1701,10 +1709,10 @@ public class AdminInterface2 extends javax.swing.JFrame {
         Specific_Transac_Table.setModal(false);
         Specific_Transac_Table.setLocationRelativeTo(null);
         Specific_Transac_Table.setVisible(true);
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_view_transactionsActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        
+    private void logoutadminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutadminActionPerformed
+        // LOG OUT of the Admin
         try
         {
             Class.forName ("com.mysql.cj.jdbc.Driver");
@@ -1729,9 +1737,10 @@ public class AdminInterface2 extends javax.swing.JFrame {
         }
         new MainInterface().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_logoutadminActionPerformed
+    
+    // View And Update Registered Patients Information
+    private void registered_usersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registered_usersActionPerformed
         Registered_patients.setModal(false);
        
        try
@@ -1770,7 +1779,7 @@ public class AdminInterface2 extends javax.swing.JFrame {
        Registered_patients.setModal(false);
        Registered_patients.setLocationRelativeTo(null);
        Registered_patients.setVisible(true);
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_registered_usersActionPerformed
 
     private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
        int found = 0;
@@ -1894,14 +1903,19 @@ public class AdminInterface2 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Record not found.");
         }
     }//GEN-LAST:event_Search_TransactionsActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-       new AppointmentMain().setVisible(true);
+    
+    
+    private void bookappointmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookappointmentActionPerformed
+       // Initiates Booking Portal
+        new AppointmentMain().setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_bookappointmentActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-         UserActivityTable.setModal(false); 
+    
+    
+    private void login_acitvityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_acitvityActionPerformed
+        //View User Activity 
+        UserActivityTable.setModal(false); 
         
         try
         {
@@ -1936,7 +1950,7 @@ public class AdminInterface2 extends javax.swing.JFrame {
         UserActivityTable.setModal(false);
         UserActivityTable.setLocationRelativeTo(null);
         UserActivityTable.setVisible(true);
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_login_acitvityActionPerformed
 
     private void cardtypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cardtypeActionPerformed
        
@@ -2013,7 +2027,7 @@ public class AdminInterface2 extends javax.swing.JFrame {
        
     }//GEN-LAST:event_registered_user_tableMouseClicked
 
-    private void Search1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Search1ActionPerformed
+    private void searchlabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchlabActionPerformed
         int found = 0;
         try
         {
@@ -2057,13 +2071,13 @@ public class AdminInterface2 extends javax.swing.JFrame {
                 }
         }
         catch(Exception e){ e.printStackTrace();}
-    }//GEN-LAST:event_Search1ActionPerformed
+    }//GEN-LAST:event_searchlabActionPerformed
 
     private void cardnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cardnoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cardnoActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void paylabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paylabActionPerformed
         String patname = cardname.getText();
         String pID= patIDlab.getText();
         String patpay = amount.getText();
@@ -2105,7 +2119,7 @@ public class AdminInterface2 extends javax.swing.JFrame {
             e.printStackTrace();
         }
         
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_paylabActionPerformed
 
     private void dateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dateActionPerformed
         // TODO add your handling code here:
@@ -2125,7 +2139,7 @@ public class AdminInterface2 extends javax.swing.JFrame {
          patstatus.setText(RecordTable.getValueAt(SelectedRows, 9).toString()); 
     }//GEN-LAST:event_Specific_appointmentMouseClicked
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
         DefaultTableModel RecordTable = (DefaultTableModel) Specific_appointment.getModel();
         int SelectedRows= Specific_appointment.getSelectedRow();
         String dt = RecordTable.getValueAt(SelectedRows, 8).toString();
@@ -2156,9 +2170,9 @@ public class AdminInterface2 extends javax.swing.JFrame {
         {
             e.printStackTrace();
         }
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_updateActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
         DefaultTableModel RecordTable = (DefaultTableModel) Specific_appointment.getModel();
          int SelectedRows= Specific_appointment.getSelectedRow();
         
@@ -2170,9 +2184,9 @@ public class AdminInterface2 extends javax.swing.JFrame {
          docdept.setText("");  
          docname.setText("");  
          patstatus.setText(""); 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_clearActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void refreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshActionPerformed
         try
         {
         Class.forName ("com.mysql.cj.jdbc.Driver");
@@ -2208,9 +2222,9 @@ public class AdminInterface2 extends javax.swing.JFrame {
         {
             e.printStackTrace();
         }       
-    }//GEN-LAST:event_jButton17ActionPerformed
+    }//GEN-LAST:event_refreshActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void clearlabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearlabActionPerformed
          patIDlab.setText("");   
          testnamepay.setText("");   
          cardname.setText("");
@@ -2220,7 +2234,7 @@ public class AdminInterface2 extends javax.swing.JFrame {
          amount.setText("");
          patlabsearchid.setText("");
          
-    }//GEN-LAST:event_jButton16ActionPerformed
+    }//GEN-LAST:event_clearlabActionPerformed
 
     private void search_registeredUsersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search_registeredUsersActionPerformed
         int found = 0;
@@ -2477,7 +2491,6 @@ public class AdminInterface2 extends javax.swing.JFrame {
     private javax.swing.JButton Refreshlabpayment;
     private javax.swing.JDialog Registered_patients;
     private javax.swing.JButton Search;
-    private javax.swing.JButton Search1;
     private javax.swing.JButton Search_Transactions;
     private javax.swing.JDialog Specific_Appointment_Table;
     private javax.swing.JDialog Specific_Transac_Table;
@@ -2488,25 +2501,16 @@ public class AdminInterface2 extends javax.swing.JFrame {
     private javax.swing.JTable User_Activity;
     private javax.swing.JTextField amount;
     private javax.swing.JTextField apptdate1;
+    private javax.swing.JButton bookappointment;
     private javax.swing.JTextField cardname;
     private javax.swing.JTextField cardno;
     private javax.swing.JComboBox<String> cardtype;
+    private javax.swing.JButton clear;
+    private javax.swing.JButton clearlab;
     private javax.swing.JTextField cvv;
     private javax.swing.JTextField date;
     private javax.swing.JTextField docdept;
     private javax.swing.JTextField docname;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2563,6 +2567,8 @@ public class AdminInterface2 extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTable lab_payment;
+    private javax.swing.JButton login_acitvity;
+    private javax.swing.JButton logoutadmin;
     private javax.swing.JTextField patIDlab;
     private javax.swing.JTextArea patid;
     private javax.swing.JTextField patidentiinfo;
@@ -2581,12 +2587,20 @@ public class AdminInterface2 extends javax.swing.JFrame {
     private javax.swing.JTextField pattransacname;
     private javax.swing.JTextField pattransacpurpose;
     private javax.swing.JTextField pattransactimestamp;
+    private javax.swing.JButton paylab;
+    private javax.swing.JButton payment_lab;
     private javax.swing.JTextField phoneno;
     private javax.swing.JTextField phoneno1;
+    private javax.swing.JButton refresh;
     private javax.swing.JTable registered_user_table;
+    private javax.swing.JButton registered_users;
     private javax.swing.JButton search_registeredUsers;
+    private javax.swing.JButton searchlab;
     private javax.swing.JTextField status;
     private javax.swing.JTextField testnamepay;
+    private javax.swing.JButton update;
+    private javax.swing.JButton view_appointments;
+    private javax.swing.JButton view_transactions;
     // End of variables declaration//GEN-END:variables
 
    // private void fileshare() {

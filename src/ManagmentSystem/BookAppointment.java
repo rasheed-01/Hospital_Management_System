@@ -690,6 +690,7 @@ public class BookAppointment extends javax.swing.JFrame {
     }//GEN-LAST:event_clearActionPerformed
 
     private void SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitActionPerformed
+        // Creates an appointment by entering details into the database
         String patname = name.getText();
         String pID= patID.getText();
         String patage= age.getText();
@@ -853,6 +854,7 @@ public class BookAppointment extends javax.swing.JFrame {
     }//GEN-LAST:event_idnoActionPerformed
 
     private void findrecordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_findrecordActionPerformed
+        // Finds the record using Identification Number
         String identification=idno.getText();
         try{ 
         

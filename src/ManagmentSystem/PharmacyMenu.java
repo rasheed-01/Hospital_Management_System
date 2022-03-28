@@ -118,7 +118,7 @@ public class PharmacyMenu extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         stats = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        logoutpharmacy = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -495,18 +495,18 @@ public class PharmacyMenu extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(635, 218));
 
         jButton5.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
-        jButton5.setText("View Requests");
+        jButton5.setText("View Pending Requests");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
 
-        jButton6.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
-        jButton6.setText("LogOut");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        logoutpharmacy.setFont(new java.awt.Font("Rockwell", 1, 18)); // NOI18N
+        logoutpharmacy.setText("LogOut");
+        logoutpharmacy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                logoutpharmacyActionPerformed(evt);
             }
         });
 
@@ -544,9 +544,9 @@ public class PharmacyMenu extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(68, 68, 68)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(80, 80, 80)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton5)
+                .addGap(37, 37, 37)
+                .addComponent(logoutpharmacy, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -562,7 +562,7 @@ public class PharmacyMenu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(logoutpharmacy, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20))
         );
 
@@ -617,7 +617,7 @@ public class PharmacyMenu extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void logoutpharmacyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutpharmacyActionPerformed
          try
         {
             Class.forName ("com.mysql.cj.jdbc.Driver");
@@ -642,7 +642,7 @@ public class PharmacyMenu extends javax.swing.JFrame {
         }
         new MainInterface().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_logoutpharmacyActionPerformed
 
     private void pharmacy_tableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pharmacy_tableMouseClicked
         DefaultTableModel RecordTable = (DefaultTableModel) pharmacy_table.getModel();
@@ -899,7 +899,6 @@ public class PharmacyMenu extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -924,6 +923,7 @@ public class PharmacyMenu extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JButton logoutpharmacy;
     private javax.swing.JTextField pID;
     private javax.swing.JTextArea patidsearch;
     private javax.swing.JTextField patinfoage;

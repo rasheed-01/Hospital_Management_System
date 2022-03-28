@@ -28,9 +28,9 @@
               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jButton1" min="-2" pref="129" max="-2" attributes="0"/>
+                      <Component id="doctorback" min="-2" pref="129" max="-2" attributes="0"/>
                       <EmptySpace pref="59" max="32767" attributes="0"/>
-                      <Component id="jButton2" min="-2" pref="129" max="-2" attributes="0"/>
+                      <Component id="doctorlogin" min="-2" pref="129" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -65,8 +65,8 @@
               </Group>
               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton1" alignment="3" min="-2" pref="49" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" min="-2" pref="49" max="-2" attributes="0"/>
+                  <Component id="doctorback" alignment="3" min="-2" pref="49" max="-2" attributes="0"/>
+                  <Component id="doctorlogin" alignment="3" min="-2" pref="49" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
           </Group>
@@ -107,7 +107,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="doctorback">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="18" style="1"/>
@@ -115,10 +115,10 @@
         <Property name="text" type="java.lang.String" value="Back"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="doctorbackActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="doctorlogin">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="18" style="1"/>
@@ -126,7 +126,7 @@
         <Property name="text" type="java.lang.String" value="Login"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="doctorloginActionPerformed"/>
       </Events>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">

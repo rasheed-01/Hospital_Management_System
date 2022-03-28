@@ -837,7 +837,7 @@ public class DoctorMenu extends javax.swing.JFrame{
         });
 
         jButton3.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
-        jButton3.setText("Appointments");
+        jButton3.setText("View Pending Appointments");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -943,7 +943,8 @@ public class DoctorMenu extends javax.swing.JFrame{
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       Appointment_Viewer.setModal(false);
+        //View And Update All Appointments
+        Appointment_Viewer.setModal(false);
        String stats3= "Pending";
         
         try

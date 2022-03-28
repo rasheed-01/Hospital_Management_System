@@ -35,13 +35,13 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="167" max="-2" attributes="0"/>
+                      <Component id="admin" min="-2" pref="167" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jButton4" min="-2" pref="168" max="-2" attributes="0"/>
+                      <Component id="doctor" min="-2" pref="168" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" pref="168" max="-2" attributes="0"/>
+                      <Component id="pharmacy" min="-2" pref="168" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" pref="168" max="-2" attributes="0"/>
+                      <Component id="lab" min="-2" pref="168" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="72" max="32767" attributes="0"/>
@@ -56,10 +56,10 @@
               <Component id="jLabel2" min="-2" pref="36" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton1" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="jButton4" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="jButton3" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="admin" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="doctor" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="pharmacy" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="lab" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="47" max="32767" attributes="0"/>
           </Group>
@@ -75,7 +75,7 @@
         <Property name="text" type="java.lang.String" value="Choose Your User Type"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="admin">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="20" style="1"/>
@@ -83,10 +83,10 @@
         <Property name="text" type="java.lang.String" value="Admin"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adminActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="pharmacy">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="20" style="1"/>
@@ -94,10 +94,10 @@
         <Property name="text" type="java.lang.String" value="Pharmacy"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pharmacyActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="lab">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="20" style="1"/>
@@ -105,7 +105,7 @@
         <Property name="text" type="java.lang.String" value="Lab"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="labActionPerformed"/>
       </Events>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">
@@ -154,7 +154,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="doctor">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="20" style="1"/>
@@ -162,7 +162,7 @@
         <Property name="text" type="java.lang.String" value="Doctor"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="doctorActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

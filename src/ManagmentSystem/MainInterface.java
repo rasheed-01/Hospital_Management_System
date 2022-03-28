@@ -29,12 +29,12 @@ public class MainInterface extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        admin = new javax.swing.JButton();
+        pharmacy = new javax.swing.JButton();
+        lab = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        doctor = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(932, 289));
@@ -42,27 +42,27 @@ public class MainInterface extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Rockwell", 0, 24)); // NOI18N
         jLabel2.setText("Choose Your User Type");
 
-        jButton1.setFont(new java.awt.Font("Rockwell", 1, 20)); // NOI18N
-        jButton1.setText("Admin");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        admin.setFont(new java.awt.Font("Rockwell", 1, 20)); // NOI18N
+        admin.setText("Admin");
+        admin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                adminActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Rockwell", 1, 20)); // NOI18N
-        jButton2.setText("Pharmacy");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        pharmacy.setFont(new java.awt.Font("Rockwell", 1, 20)); // NOI18N
+        pharmacy.setText("Pharmacy");
+        pharmacy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                pharmacyActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Rockwell", 1, 20)); // NOI18N
-        jButton3.setText("Lab");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        lab.setFont(new java.awt.Font("Rockwell", 1, 20)); // NOI18N
+        lab.setText("Lab");
+        lab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                labActionPerformed(evt);
             }
         });
 
@@ -90,11 +90,11 @@ public class MainInterface extends javax.swing.JFrame {
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
-        jButton4.setFont(new java.awt.Font("Rockwell", 1, 20)); // NOI18N
-        jButton4.setText("Doctor");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        doctor.setFont(new java.awt.Font("Rockwell", 1, 20)); // NOI18N
+        doctor.setText("Doctor");
+        doctor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                doctorActionPerformed(evt);
             }
         });
 
@@ -110,13 +110,13 @@ public class MainInterface extends javax.swing.JFrame {
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(99, 99, 99)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(admin, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(doctor, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(pharmacy, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(lab, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(72, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -127,36 +127,36 @@ public class MainInterface extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(admin, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(doctor, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pharmacy, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lab, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(47, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void adminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminActionPerformed
    
         new AdminInterface().setVisible(true);
         this.setVisible(false);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_adminActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void pharmacyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pharmacyActionPerformed
         new PharmacyLogin().setVisible(true);
         this.setVisible(false);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_pharmacyActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void labActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_labActionPerformed
         new LabLogin().setVisible(true);
         this.setVisible(false); // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_labActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void doctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doctorActionPerformed
         new DoctorLogin().setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_doctorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -171,12 +171,12 @@ public class MainInterface extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton admin;
+    private javax.swing.JButton doctor;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton lab;
+    private javax.swing.JButton pharmacy;
     // End of variables declaration//GEN-END:variables
 }

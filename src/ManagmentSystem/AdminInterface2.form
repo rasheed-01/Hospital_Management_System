@@ -159,11 +159,11 @@
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jButton17" min="-2" pref="83" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jButton3" min="-2" pref="79" max="-2" attributes="0"/>
+                          <Component id="refresh" min="-2" pref="94" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="clear" min="-2" pref="79" max="-2" attributes="0"/>
                           <EmptySpace pref="13" max="32767" attributes="0"/>
-                          <Component id="jButton9" min="-2" pref="89" max="-2" attributes="0"/>
+                          <Component id="update" min="-2" pref="89" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -233,10 +233,10 @@
                   </Group>
                   <EmptySpace pref="32" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton17" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="refresh" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="jButton9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton3" alignment="3" max="32767" attributes="0"/>
+                          <Component id="update" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="clear" alignment="3" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
@@ -394,6 +394,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="patinfoname">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="patinfoID">
           <Properties>
@@ -401,6 +404,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="patinfoage">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel25">
           <Properties>
@@ -447,7 +453,7 @@
             <Property name="text" type="java.lang.String" value="Patient Information"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton9">
+        <Component class="javax.swing.JButton" name="update">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Rockwell" size="14" style="0"/>
@@ -455,7 +461,7 @@
             <Property name="text" type="java.lang.String" value="Update"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="apptdate1">
@@ -478,7 +484,7 @@
             <Property name="text" type="java.lang.String" value="Department"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="clear">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Rockwell" size="14" style="0"/>
@@ -486,10 +492,10 @@
             <Property name="text" type="java.lang.String" value="Clear"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clearActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton17">
+        <Component class="javax.swing.JButton" name="refresh">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Rockwell" size="14" style="0"/>
@@ -497,7 +503,7 @@
             <Property name="text" type="java.lang.String" value="Refresh"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton17ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -896,7 +902,7 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jScrollPane11" min="-2" pref="447" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                          <Component id="Search1" min="-2" pref="84" max="-2" attributes="0"/>
+                          <Component id="searchlab" min="-2" pref="84" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="337" max="32767" attributes="0"/>
                       </Group>
                       <Component id="jScrollPane8" max="32767" attributes="0"/>
@@ -980,9 +986,9 @@
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="Refreshlabpayment" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jButton16" min="-2" pref="79" max="-2" attributes="0"/>
+                                              <Component id="clearlab" min="-2" pref="79" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                              <Component id="jButton5" min="-2" pref="89" max="-2" attributes="0"/>
+                                              <Component id="paylab" min="-2" pref="89" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -1006,7 +1012,7 @@
                                   <Component id="jScrollPane11" alignment="0" pref="0" max="32767" attributes="0"/>
                                   <Component id="jLabel21" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="Search1" alignment="1" min="-2" pref="37" max="-2" attributes="0"/>
+                              <Component id="searchlab" alignment="1" min="-2" pref="37" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                           <Component id="jScrollPane8" max="32767" attributes="0"/>
@@ -1065,8 +1071,8 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="Refreshlabpayment" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                              <Component id="jButton5" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                              <Component id="jButton16" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                              <Component id="paylab" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                              <Component id="clearlab" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
@@ -1240,7 +1246,7 @@
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator3">
         </Component>
-        <Component class="javax.swing.JButton" name="jButton5">
+        <Component class="javax.swing.JButton" name="paylab">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Rockwell" size="14" style="0"/>
@@ -1248,7 +1254,7 @@
             <Property name="text" type="java.lang.String" value="Pay"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="paylabActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Refreshlabpayment">
@@ -1356,7 +1362,7 @@
             <Property name="text" type="java.lang.String" value="Enter Patient ID :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="Search1">
+        <Component class="javax.swing.JButton" name="searchlab">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Rockwell" size="12" style="0"/>
@@ -1364,7 +1370,7 @@
             <Property name="text" type="java.lang.String" value="Search"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Search1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchlabActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel30">
@@ -1402,7 +1408,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dateActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton16">
+        <Component class="javax.swing.JButton" name="clearlab">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Rockwell" size="14" style="0"/>
@@ -1410,7 +1416,7 @@
             <Property name="text" type="java.lang.String" value="Clear"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton16ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clearlabActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -1824,15 +1830,15 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jButton8" max="32767" attributes="0"/>
-                          <Component id="jButton2" alignment="0" pref="205" max="32767" attributes="0"/>
-                          <Component id="jButton4" alignment="0" max="32767" attributes="0"/>
+                          <Component id="bookappointment" max="32767" attributes="0"/>
+                          <Component id="view_appointments" alignment="0" pref="205" max="32767" attributes="0"/>
+                          <Component id="view_transactions" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="70" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jButton10" max="32767" attributes="0"/>
-                          <Component id="jButton7" alignment="0" pref="203" max="32767" attributes="0"/>
-                          <Component id="jButton1" alignment="1" max="32767" attributes="0"/>
+                          <Component id="login_acitvity" max="32767" attributes="0"/>
+                          <Component id="registered_users" alignment="0" pref="203" max="32767" attributes="0"/>
+                          <Component id="payment_lab" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="45" max="32767" attributes="0"/>
                   </Group>
@@ -1840,7 +1846,7 @@
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
-              <Component id="jButton6" min="-2" pref="219" max="-2" attributes="0"/>
+              <Component id="logoutadmin" min="-2" pref="219" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -1853,28 +1859,28 @@
               <Component id="jLabel1" min="-2" pref="29" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton8" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="jButton1" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                  <Component id="bookappointment" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                  <Component id="payment_lab" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton7" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                  <Component id="registered_users" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                  <Component id="view_appointments" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton10" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="jButton4" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                  <Component id="login_acitvity" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                  <Component id="view_transactions" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jButton6" min="-2" pref="47" max="-2" attributes="0"/>
+              <Component id="logoutadmin" min="-2" pref="47" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="payment_lab">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="14" style="0"/>
@@ -1882,10 +1888,10 @@
         <Property name="text" type="java.lang.String" value="Payment For Lab Test"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="payment_labActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="view_appointments">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="14" style="0"/>
@@ -1893,7 +1899,7 @@
         <Property name="text" type="java.lang.String" value="Appointments"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="view_appointmentsActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
@@ -1904,7 +1910,7 @@
         <Property name="text" type="java.lang.String" value="Choose One of the Following Options"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="view_transactions">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="14" style="0"/>
@@ -1912,10 +1918,10 @@
         <Property name="text" type="java.lang.String" value="Transactions"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="view_transactionsActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="logoutadmin">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="14" style="0"/>
@@ -1923,10 +1929,10 @@
         <Property name="text" type="java.lang.String" value="Log Out"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="logoutadminActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton7">
+    <Component class="javax.swing.JButton" name="registered_users">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="14" style="0"/>
@@ -1934,7 +1940,7 @@
         <Property name="text" type="java.lang.String" value="Update Registered Users"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registered_usersActionPerformed"/>
       </Events>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">
@@ -1981,7 +1987,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton8">
+    <Component class="javax.swing.JButton" name="bookappointment">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="14" style="0"/>
@@ -1989,10 +1995,10 @@
         <Property name="text" type="java.lang.String" value="Book An Appointment"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bookappointmentActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton10">
+    <Component class="javax.swing.JButton" name="login_acitvity">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Rockwell" size="14" style="0"/>
@@ -2000,7 +2006,7 @@
         <Property name="text" type="java.lang.String" value="View Login Activtiy"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="login_acitvityActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
